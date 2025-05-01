@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-Flow</title>
+    <link rel="stylesheet" href="style25.css">
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <div class="center">
+        <div class="images">
+            <div class="slide img1"><img src="https://img.freepik.com/premium-photo/couple-love-friends-watching-movie-with-popcorn-cinema_217333-2532.jpg?uid=R197195727&ga=GA1.1.2021150740.1743191465&semt=ais_hybrid&w=740" alt=""></div>
+            <div class="slide"><img src="https://img.freepik.com/premium-photo/cheerful-handsome-black-guy-pointing-copy-space-full-length_116547-84339.jpg?uid=R197195727&ga=GA1.1.2021150740.1743191465&semt=ais_hybrid&w=740"></div>
+            <div class="slide"><img src="https://img.freepik.com/free-photo/people-office-work-day_23-2150690162.jpg?uid=R197195727&ga=GA1.1.2021150740.1743191465&semt=ais_hybrid&w=740" alt=""></div>
+            <div class="slide"><img src="https://img.freepik.com/free-photo/young-african-american-man-wearing-white-shirt_273609-21699.jpg?uid=R197195727&ga=GA1.1.2021150740.1743191465&semt=ais_hybrid&w=740" alt=""></div>
+            <div class="slide"><img src="https://img.freepik.com/premium-photo/young-man-using-mobile-phone_1048944-8934050.jpg?uid=R197195727&ga=GA1.1.2021150740.1743191465&semt=ais_hybrid&w=740"></div>
+        </div>
+        <div class="buttons">
+           <a href="#"class="btn1 active"><img src="https://cdn-icons-png.freepik.com/256/11552/11552441.png?uid=R197195727&ga=GA1.1.2021150740.1743191465&semt=ais_hybrid" alt=""></a>
+           <a href="#"class="btn2"><img src="https://cdn-icons-png.freepik.com/256/11552/11552441.png?uid=R197195727&ga=GA1.1.2021150740.1743191465&semt=ais_hybrid"></a>
+           <a href="#"class="btn3"><img src="https://cdn-icons-png.freepik.com/256/11552/11552441.png?uid=R197195727&ga=GA1.1.2021150740.1743191465&semt=ais_hybrid" alt=""></a>
+           <a href="#"class="btn4"><img src="https://cdn-icons-png.freepik.com/256/11552/11552441.png?uid=R197195727&ga=GA1.1.2021150740.1743191465&semt=ais_hybrid" alt=""></a>
+           <a href="#"class="btn5"><img src="https://cdn-icons-png.freepik.com/256/11552/11552441.png?uid=R197195727&ga=GA1.1.2021150740.1743191465&semt=ais_hybrid" alt=""></a>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('.btn1').click(function(){
+                $('.img1').css("marginLeft", "0");
+            });
+            $('.btn2').click(function(){
+                $('.img1').css("marginLeft", "-20%");
+            });
+            $('.btn3').click(function(){
+                $('.img1').css("marginLeft", "-40%");
+            });
+            $('.btn4').click(function(){
+                $('.img1').css("marginLeft", "-60%");
+            });
+            $('.btn5').click(function(){
+                $('.img1').css("marginLeft", "-80%");
+            });
+            $('a').click(function(){
+                $(this).addClass('active').siblings()
+                       .removeClass('active');
+            })
+        })
+    </script>
+</body>
+</html>
